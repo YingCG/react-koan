@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.problems{
+  color: red;
+}
+
+.dummyButton{
+  padding : 10px 20px;
+  font-size: 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
