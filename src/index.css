@@ -19,8 +19,12 @@ code {
 .dummyButton{
   padding : 10px 20px;
   font-size: 20px;
-  background-color: teal;
+  background-color: #28FFBF;
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+.smalltext{
+  font-size: 14px;
 }
