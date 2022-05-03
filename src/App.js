@@ -26,9 +26,13 @@ function App() {
               setTask('You can now replace the button with Button component')
             }
             setHello("Today we are making React Sandwich")
+            // setHello("Today we are making React Sandwich")
             setShowTips("");
-            }}>Let's Do It!</button>
-          <button onClick={() => { setShowTips('When you click, above line shall change to --> Today we are making React Sandwich')}} >Show Tips</button>
+            }}>Change Greeting</button>
+          <button onClick={() => { 
+            if(hello === 'Get Your Coffee Ready!')
+            setShowTips('When you click, above line shall change to --> Today we are making React Sandwich')
+            }} >Show Tips</button>
 
         </div>
       </header>
