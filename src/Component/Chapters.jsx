@@ -1,33 +1,21 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import Chapter from './Chapter';
-
+import learningModules from '../data/courseModules'
 
 function Chapters() {
-    
-    const [content, setContent] = useState(loadContent())
+    const [selectContent, setSelectedContent] = useState(0)
 
-    function loadContent (){
-        let learningModules = 0;
-        {learningModules.map((pageContent=> (
-            <Chapter />
-        )))}
-
-        setContent(content.learningModules + 1)
-
-    }
-
-    useEffect(() => {
-        document.title = content +1
-    },)
-
+    const module = learningModules.filter(x => x.id === selectContent)[0];
 
   return (
     <div>
-        <div>{content}</div>
-        <button onClick={loadContent}>1</button>
-        <button onClick={loadContent}>2</button>
-        <button onClick={loadContent}>3</button>
+        {
+            module && <Chapter {...module} />
+        }
+
+
+        {learningModules.map((m) => <button onClick={() => setSelectedContent(m.id)}>{m.id}</button>)}
     </div>
   )
 }

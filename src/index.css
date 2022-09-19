@@ -150,3 +150,10 @@ color: #5D5FEF;
 .right-content{
   height: 80vh;
 }
+
+.arrow-instruction{
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+}

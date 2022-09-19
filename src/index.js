@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Chapters from './Component/Chapters';
+import Welcome from './Component/Welcome';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Welcome from './component/Welcome';
-import Counter from './component/Counter';
 
 ReactDOM.render(
   <React.StrictMode>
     <Welcome/>
-    {/* <Counter/> */}
+    <Chapters/>
   </React.StrictMode>,
   document.getElementById('root')
 );
