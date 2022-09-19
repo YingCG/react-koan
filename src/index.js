@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Welcome from './component/Welcome';
+import Counter from './component/Counter';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Welcome/>
+    {/* <Counter/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

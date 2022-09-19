@@ -24,3 +24,129 @@ code {
   border: none;
   border-radius: 5px;
 }
+
+.welcome{
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top{
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.container{
+  text-align: center;
+  display: flex;
+}
+
+.left-col{
+  width: 50%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-col{
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  color: black;
+  align-items: center;
+}
+
+.content-container{
+  display: flex;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.dom{
+  padding: 0.5rem;
+  background-color: #FFD554;
+  color: black;
+  border-radius: 10px;
+  margin: 0.5rem;
+  width: 150px;
+  height: 20px;
+  flex-direction: column;
+}
+
+.blue-border{
+  background-color: #5D5FEF;
+  border: 4px solid #FFD554;
+  color: #FFD554;
+  font-weight: bold;
+}
+
+.icon{
+  width: 70px;
+  height: auto;
+}
+
+.welcome-header{
+  display: flex;
+  gap: 1rem;
+  color: #00FFAB;
+  align-items: center;
+}
+
+.flex-element{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.btn-pre, .btn-next{
+  background-color: #5D5FEF;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.triangle{
+  align-items: center;
+  border-width: 0.7rem 1rem 0.7rem 0;
+	border-color: transparent #FFD554 transparent transparent;
+	border-style: solid;
+}
+
+.triangle-rotate{
+  align-items: center;
+  border-width: 0.7rem 0rem 0.7rem 1rem ;
+	border-color: transparent transparent transparent #FFD554;
+	border-style: solid;
+}
+
+.page-tag{
+background-color: lightgrey;
+height: 1em;
+padding: 0.5rem;
+color: #5D5FEF;
+}
+
+.btn-explain{
+  background-color: #5D5FEF;
+  border: 4px solid lightgrey;
+  color: white;
+  border-radius: 1em;
+  padding:  0rem 2rem;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.flex-element{
+  justify-content: flex-end;
+  margin: 1rem;
+}
+.right-content{
+  height: 80vh;
+}
