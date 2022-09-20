@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Chapters from './Component/Chapters';
-import Welcome from './Component/Welcome';
+import App from './App';
+import Welcome from './component/Welcome';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome/>
-    <Chapters/>
+    {/* <Welcome/> */}
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

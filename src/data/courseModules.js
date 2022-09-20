@@ -8,9 +8,16 @@ const learningModules = [
     },
     {
         id : 2,
-        title: "Import an Reusable component",
+        title: "Using Embedding Expressions in JSX",
         description: "For Example: import componentName form 'where/foder/component' ",
         url: "/learning/2",
+        route: true
+    },
+    {
+        id: 3,
+        title: "Reusable component",
+        description: "For Example: import componentName form 'where/foder/component' ",
+        url: "/learning/3",
         route: true
     }
 ]
