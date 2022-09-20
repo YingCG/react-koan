@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Chapters from './component/Chapters';
 import ChallengeTag from './component/ChallengeTag';
 import { useEffect, useState } from 'react';
 import learningModules from './data/courseModules'
+import Challenges from './component/Challenges';
 
-function App(props) {
-  const [resource, setResource] = useState([])
-  const task = 'React Sanwich'
+function App() {
+
+  const task = 'React Sandwich'
+  const [page, setPage] = useState(1);
 
   
   return (
@@ -29,11 +30,21 @@ function App(props) {
     </div>
         <div className="right-col">
         <div className="right-header">
-          <ChallengeTag />
+          <ChallengeTag page={page} setPage={setPage} />
         </div>
         <div className="welcome">
           <div className="right-content">
-          
+          <Challenges page={page}/>
+      </div>
+      </div> 
+    </div>
+    </div>
+    </div>
+  );
+}
+
+export default App;
+
         {/* <h1 className='title'>
           Using Embedding Expressions in JSX
           </h1>
@@ -47,13 +58,3 @@ function App(props) {
           &#123;task&#125;&#60;/div&#62;
         </code> */}
         {/* <Button /> */}
-
-      </div>
-      </div>
-    </div>
-    </div>
-    </div>
-  );
-}
-
-export default App;

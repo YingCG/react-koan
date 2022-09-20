@@ -1,34 +1,28 @@
-import React, { useState } from 'react'
-import { useEffect } from 'react';
+import React from 'react'
 import learningModules from '../data/courseModules'
 
-function ChallengeTag() {
-  const [count, setCount] = useState(1);
-  const [resource, setResource] = useState([])
-
- function handleChapter (e){
-    const newChallenge = e.target.value
-    if (isNaN(newChallenge)) return setCount(newChallenge)
-}
-
-
+function ChallengeTag(props) {
   return (
     <>
-    <div className='flex-element'>
-        <div className="btn-pre" type="button" onClick={() => {
-           if(count > 1) {
-             setCount(count - 1)
-           }
+      <div className='flex-element'>
+        <div className="btn-pre" onClick={() => {
+          if (props.page > 1) {
+            props.setPage(props.page - 1)
           }
+        }
         }>
           <div className="triangle"></div>
         </div>
-        <div className="page-tag" onChange={handleChapter}>Challenge {count}</div>
-        <div className="btn-next" type="button"  onClick={() => setCount(count + 1)} >
+        <div className="page-tag">Challenge {props.page}</div>
+        <div className="btn-next" onClick={() => {
+          if(props.page < learningModules.length) {
+            props.setPage(props.page + 1)
+          }
+        }
+        }>
           <div className="triangle-rotate"></div>
         </div>
-    </div>
-    <div>{resource}</div>
+      </div>
     </>
   )
 }
