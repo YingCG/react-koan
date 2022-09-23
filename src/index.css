@@ -69,7 +69,7 @@ h1, h2, h3{
 }
 
 .right-content{
-  padding: 2rem;
+  padding: 0 2rem 0 2rem;
 }
 
 .content-container{
@@ -196,7 +196,7 @@ color: #5D5FEF;
 }
 
 .description{
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   color: #FFD554;
   text-align: left;
   align-items: center;
@@ -206,4 +206,8 @@ color: #5D5FEF;
   color: #5D5FEF;
   padding: 3px;
   border-radius: 25px;
+}
+
+.code{
+  font-size: 10px;
 }
